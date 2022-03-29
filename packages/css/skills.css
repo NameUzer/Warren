@@ -1,0 +1,264 @@
+/*skills*/
+.skills__main {
+    min-height: 20vh;
+    background: #f8fafc;
+    -webkit-transform: skew(0deg, -3deg);
+    transform: skew(0deg, -3deg);
+    color: #333
+}
+.skills__main .skills {
+    margin-top: 100px;
+    text-align: center;
+    padding: 80px 0;
+    -webkit-transform: skew(0deg, 3deg);
+    transform: skew(0deg, 3deg)
+}
+
+.skills__main .skills p {
+    margin-top: 12px;
+    font-size: 16.5px
+}
+
+.skills__main .skills .skills__list {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 25px
+}
+
+.skills__main .skills .skills__list .skill__list {
+    display: flex;
+    min-height: 80px;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+    color: #333
+}
+
+.skills__main .skills .skills__list .skill__list .icon__main {
+    padding: 20px;
+    display: flex;
+    align-items: center
+}
+
+.skills__main .skills .skills__list .skill__list .icon__main .icon {
+    font-size: 42px;
+    margin-top: 6px
+}
+
+.skills__main .skills .skills__list .skill__list .name {
+    font-size: 15px
+}
+
+.skills__main .skills .skills__list .skill__list:hover {
+    background: #000;
+    color: #fff
+}
+
+.projects__main {
+    margin-top: 100px;
+    padding-bottom: 100px
+}
+
+.projects__main .projects {
+    color: #333
+}
+
+.projects__main .projects .projects__list {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 50px
+}
+
+.projects__main .projects h1 {
+    text-align: center
+}
+
+.projects__main .projects>p {
+    font-size: 16.5px;
+    margin-top: 12px;
+    text-align: center
+}
+
+.projects__main .projects .project {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background: #eff1ff;
+    padding-bottom: 90px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    cursor: pointer
+}
+
+.projects__main .projects .project:hover {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px)
+}
+
+.projects__main .projects .project .project__info {
+    text-align: left;
+    padding: 40px 40px 10px
+}
+
+.projects__main .projects .project .project__info h2 {
+    font-size: 22px
+}
+
+.projects__main .projects .project .project__info p {
+    margin-top: 14px;
+    font-size: 15px;
+    line-height: 1.8em;
+    color: #4e4e4e
+}
+
+.projects__main .projects .project .project__info h3 {
+    margin-top: 35px;
+    font-size: 17px
+}
+
+.projects__main .projects .project .project__info .project__info__tech {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    margin-top: 25px
+}
+
+.projects__main .projects .project .project__info .project__info__tech div {
+    border-radius: 15px;
+    font-size: 15px
+}
+
+.projects__main .projects .project .project__showcase__1 {
+    text-align: right
+}
+
+.projects__main .projects .project .project__showcase__1 img {
+    width: 100%;
+    border-radius: 15px;
+    display: none
+}
+
+.projects__main .projects .project button {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 16px 0;
+    background: #000;
+    color: #eff1ff;
+    border: none;
+    border-radius: 0 0 15px 15px;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out
+}
+
+.projects__main .projects .project button:hover {
+    background: #252525
+}
+
+@media (max-width:1200px) {
+    .container {
+        max-width: 900px
+    }
+    .skills__main .skills .skills__list {
+        grid-template-columns: repeat(4, 1fr)
+    }
+    .projects__main .projects .projects__list {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+@media (max-width:900px) {
+    .container {
+        max-width: 700px
+    }
+
+    .skills__main .skills .skills__list {
+        grid-template-columns: repeat(3, 1fr)
+    }
+    .projects__main .projects .projects__list {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+@media (max-width:700px) {
+    .container {
+        max-width: 450px
+    }
+
+    .skills__main .skills h1 {
+        font-size: 27px
+    }
+    .skills__main .skills p {
+        font-size: 15px
+    }
+    .skills__main .skills .skills__list {
+        grid-template-columns: repeat(2, 1fr)
+    }
+    .skills__main .skills .skills__list .skill__list {
+        flex-direction: column
+    }
+    .skills__main .skills .skills__list .skill__list:hover {
+        background: none;
+        color: #333
+    }
+    .projects__main .projects h1 {
+        font-size: 27px
+    }
+    .projects__main .projects p {
+        font-size: 15px
+    }
+    .projects__main .projects .projects__list {
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .aboutme__main__main .aboutme__main .aboutme h1 {
+        font-size: 27px
+    }
+    .aboutme__main__main .aboutme__main .aboutme p {
+        font-size: 15px
+    }
+    .aboutme__main__main .aboutme__main .aboutme .aboutme__info {
+        width: 80%
+    }
+    .aboutme__main__main .aboutme__social {
+        width: 70%
+    }
+}
+
+@media (max-width:450px) {
+    .container {
+        max-width: 340px
+    }
+}
+
+@media (max-width:325px) {
+    .container {
+        max-width: 300px
+    }
+
+    .skills__main .skills .skills__list {
+        grid-template-columns: repeat(2, 1fr)
+    }
+    .aboutme__main__main .aboutme__social {
+        width: 100%
+    }
+}

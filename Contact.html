@@ -1,0 +1,183 @@
+<html lang="en">
+    <head>
+	<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="./packages/css/swiper-bundle.min.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="./packages/css/styles.css">
+		<!--==================== Favicon ====================-->
+		<link rel="shortcut icon" href="./packages/images/MyFavicon.png">
+		<title>WARREN | SKILLS</title>
+	</head>
+	<body>
+	<!--==================== HEADER ====================-->
+	        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="index.html" class="nav__logo">Warren Anthony</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">
+                                <i class="uil uil-estate nav__icon"></i>Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="About.html" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i>About
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="skills.html" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i>Skills
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="Projects.html" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i>Projects                                
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i>Contact                               
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+	 
+		  <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-phone-alt contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Call me</h3>
+                            <span class="contatc__subtitle">(+63) 9686776629</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">E-mail</h3>
+                            <span class="contatc__subtitle">warren22palabay24@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Location</h3>
+                            <span class="contatc__subtitle">Bangar, Rosario La Union</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form  action='javascript:sendemail();'  method="POST" id="form" class="contact__form grid">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Name</label>
+                            <input id="name" type="text" class="contact__input">
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="" class="contact__label">E-mail</label>
+                            <input id="email" type="email" class="contact__input">
+                        </div>
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Subject</label>
+                        <input id="subject" type="text" class="contact__input">
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Description</label>
+                        <textarea name="" id="description" cols="0" rows="7" class="contact__input"></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="button button--flex">
+                            Send message
+                            <i class="uil uil-message button__icon"></i>
+                        </button>
+                        
+                    </div>
+                </form>
+            </div>
+
+        </section>
+		 <footer class="footer">
+
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">WARREN ANTHONY MADARANG PALABAY</h1>
+                    
+                </div>
+
+                
+
+                <div class="footer__socials">
+                    <a href=https://www.facebook.com/KINGUUINPI.WARREN" target="_blank" class="footer__social">
+                        <i class="uil uil-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/uzer.wars/" target="_blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="https://github.com/NameUzer" target="_blank" class="footer__social">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+					<a href="https://youtube.com/channel/UCO0vEVgP54l_90TNFA_AR_A " target="_blank" class="footer__social">
+                        <i class="uil uil-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer__copy">&#169; KINGUUINPI. All rights reserved.</p>
+        </div>
+    </footer>
+	<!--==================== JavaScript SMTP ====================-->
+	<script src="https://smtpjs.com/v3/smtp.js"></script>  
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> 
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+	<!--==================== Mykit-fontawesome ====================-->
+    <script src="https://kit.fontawesome.com/035044b7af.js" crossorigin="anonymous"></script>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="./packages/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="./packages/js/main.js"></script>
+    <script src="./packages/js/contact.js"></script>
+	</body>
+	
+	</html>
